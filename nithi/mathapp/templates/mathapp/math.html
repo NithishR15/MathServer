@@ -2,12 +2,12 @@
 <head>
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<title>Area of Rectangle</title>
+<title>Area of a Square prism</title>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <style type="text/css">
 body 
 {
-background-color:yellow;
+background-color:pink;
 }
 .edge {
 width: 1440px;
@@ -18,21 +18,21 @@ padding-left: 300px;
 }
 .box {
 display:block;
-border: Thick dashed lime;
+border: Thick dashed rgb(43, 0, 255);
 width: 500px;
 min-height: 300px;
 font-size: 20px;
-background-color:rgb(0, 179, 255);
+background-color:rgb(255, 128, 0);
 }
 .formelt{
-color:red;
+color:rgb(32, 218, 203);
 text-align: center;
 margin-top: 7px;
 margin-bottom: 6px;
 }
 h1
 {
-color:rgb(255, 0, 179);
+color:rgb(255, 42, 0);
 text-align: center;
 padding-top: 20px;
 }
@@ -41,14 +41,14 @@ padding-top: 20px;
 <body>
 <div class="edge">
 <div class="box">
-<h1>Area of a Rectangle</h1>
+<h1>Area of a Square Prism</h1>
 <form method="POST">
 {% csrf_token %}
 <div class="formelt">
-Length : <input type="text" name="length" value="{{l}}"></input>(in m)<br/>
+Base : <input type="text" name="base" value="{{b}}"></input>(in m)<br/>
 </div>
 <div class="formelt">
-Breadth : <input type="text" name="breadth" value="{{b}}"></input>(in m)<br/>
+Height : <input type="text" name="height" value="{{h}}"></input>(in m)<br/>
 </div>
 <div class="formelt">
 <input type="submit" value="Calculate"></input><br/>
